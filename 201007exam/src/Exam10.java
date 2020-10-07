@@ -4,13 +4,14 @@ public class Exam10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n=0;
-		int sum=0; //합계
-		int i;
+		int sum=0;
 		System.out.println("1부터 n까지의 합 중에서 5000을 넘지 않는 가장 큰 합은?");
 		for(n=1; sum<=5000; n++){
 			sum += n; 
-			if(sum>5000) { 
+			if(sum>5000) {
+				
 				sum -= n; 
+				n = n-1;
 				break;
 			}
 		}
